@@ -1,0 +1,100 @@
+\documentclass[12pt, a4paper, reqno, oneside]{book}
+\usepackage{amsmath,amsxtra,amssymb,latexsym, amscd,amsthm}
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage[mathscr]{eucal}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{cases}
+\usepackage{listings}
+\usepackage{multicol}
+%\input setbmp
+\usepackage[unicode]{hyperref}
+\usepackage{titledot}
+\titlename{Chương}
+%+ Can le van ban
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.in}
+\setlength{\topmargin}{-0.5in}
+\setlength{\textheight}{9.25in}
+\renewcommand{\baselinestretch}{1.5}
+
+\evensidemargin 5.4mm
+\oddsidemargin 5.4mm
+%+ Dinh nghia mot so ky hieu toan hoc.
+\def\B{\mathscr B}
+\def\one{\mathbf 1}
+\def\R{{\mathbb R}}
+\def\LL{{\mathbb L}}
+\newcommand\abs[1]{|#1|}
+\newcommand\set[1]{\{#1\}}
+\newcommand\norm[1]{||#1||}
+\DeclareMathOperator{\vrai}{vrai}
+\DeclareMathOperator{\const}{const}
+\newcommand{\eoproof}{\hfill $\square$}
+\newcommand{\spro}[1]{\left<#1\right>}
+\newcommand{\argmin}{\arg\min}
+
+\renewcommand{\theequation}{\arabic{chapter}.\arabic{section}.\arabic{equation}}
+\newtheorem{lemma}{\bf Bổ đề}[section]
+\newtheorem{theorem}{\bf Định lý}[section]
+\newtheorem{proposition}{\bf Mệnh đề}[section]
+\newtheorem{corollary}{\bf Hệ quả}[section]
+\newtheorem{definition}{\bf Định nghĩa}[section]
+\newtheorem{remark}{\bf Chú ý}[section]
+
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+
+
+
+
+
+%+ Bat dau tai lieu tai day.
+\begin{document}
+%+ ====================================================
+
+
+
+
+
+\makeatletter
+\renewcommand{\ps@myheadings}{
+\renewcommand{\@oddhead}{\textsf{Các mô hình ngẫu nhiên và ứng dụng}\hfil\textrm{\thepage}}
+\renewcommand{\@oddfoot}{\textsf{KSTN Toán Tin K61 - Viện Toán ứng dụng và Tin học}\hfil}
+}
+\makeatother 
+
+%+ Page style
+\newpage
+\input bia
+
+\tableofcontents
+
+\newpage
+\input loimodau
+
+\newpage
+\input {chuong1}
+
+\newpage
+\input {chuong2}
+
+\newpage
+\input {chuong3}
+
+
+
+\newpage
+\input {Tongket}
+
+\newpage
+\input {Ketluan}
+
+\newpage
+\input {Tailieuthamkhao}
+
+\end{document}
