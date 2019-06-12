@@ -70,10 +70,10 @@ def testing(eps):
     A = [0] * 470
     for i in B:
         A[int(i) - 1] = 1
-    # print("Accuracy: {}".format(accuracy_score(A, list_predict)))
-    # print("Precision score: {}".format(precision_score(A, list_predict)))
-    # print("Recall score: {}".format(recall_score(A, list_predict)))
-    # print("Confusion matrix: ", confusion_matrix(A, list_predict))
+    print("Accuracy: {}".format(accuracy_score(A, list_predict)))
+    print("Precision score: {}".format(precision_score(A, list_predict)))
+    print("Recall score: {}".format(recall_score(A, list_predict)))
+    print("Confusion matrix: \n", confusion_matrix(A, list_predict))
     return accuracy_score(A, list_predict), precision_score(A, list_predict), recall_score(A, list_predict)
 
 
