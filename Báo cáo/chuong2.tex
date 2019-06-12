@@ -168,9 +168,9 @@ Từ những điều trên ta rút ra các bước của thuật toán Baum - We
 	\item Bước 1: Khởi tạo ngẫu nhiên các tham số $\lambda = (A,B,\pi)$.
 	\item Bước 2: Tính toán $\alpha_t(i),\; \beta_t(i),\; \xi_t(i,\;j),\gamma_t(i) \text{ với } t = 1,\; 2,\; ...,\; T, \; 1 \leq i,\; j \leq N$.
 	\item Bước 3: Cập nhật các tham số $\overline{\lambda} = (\overline{A},\; \overline{B},\; \overline{\pi})$:
-	$$\overline{\pi} = \gamma_1(i)$$
+	$$\overline{\pi_i} = \gamma_1(i)$$
 	$$\overline{a}_{ij} = \frac{\sum_{t=1}^{T-1}\xi_t(i,\;j)}{\sum_{t=1}^{T-1}\gamma_t(i)}$$
-	$$\overline{b}_{ij}(k) = \frac{\sum_{t=1,\; O_t=V_k}^{T}\gamma_t(i)}{\sum_{t=1}^{T-1}\gamma_t(i)}$$
+	$$\overline{b}_{ij}(k) = \frac{\sum_{t=1,\; O_t=V_k}^{T}\gamma_t(i)}{\sum_{t=1}^{T}\gamma_t(i)}$$
 	\item Bước 4: Nếu $P(O|\overline{\lambda})$ tăng quay lại bước 2, ngược lại thì dừng thuật toán.
 \end{itemize}
 Từ đó ta rút ra được $\overline{\lambda} = (\overline{A},\; \overline{B},\; \overline{\pi})$ là các tham số mới của mô hình. Theo Baum đã chứng minh, ta luôn có $P(O,\; \overline{\lambda}) > P(O|\lambda)$ cho đến khi mô hình đã đạt đến cực đại địa phương \footnote{Chi tết thêm về thuật toán và các chứng minh xem trong tài liệu [1], [4]}.
